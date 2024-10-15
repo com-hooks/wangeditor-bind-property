@@ -1,0 +1,28 @@
+{
+  "name": "wangeditor-bind-property",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "lib": "rspack-lib",
+    "build": "rspack build"
+  },
+  "exports": {
+    "main": "dist/index.mjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/types/index.d.ts",
+    "require": "/dist/index.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wangeditor/editor": "^5.1.23",
+    "rspack-dts-plugin": "^0.2.1",
+    "rspack-lib": "^0.2.0",
+    "slate": "^0.103.0",
+    "snabbdom": "^3.6.2",
+    "typescript": "^5.6.3"
+  }
+}

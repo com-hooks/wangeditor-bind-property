@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "lib": [
+      "ES2015",
+      "DOM",
+      "ESNext"
+    ],
+    "rootDir": "src",
+    "baseUrl": "./",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+  },
+  "includes": [
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+  ]
+}
