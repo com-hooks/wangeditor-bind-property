@@ -1,4 +1,4 @@
-import { type IDomEditor, ISelectMenu, SlateTransforms } from "@wangeditor/editor";
+import { type IDomEditor, ISelectMenu, SlateElement, SlateTransforms } from "@wangeditor/editor";
 import { PropertyElement } from "src/types";
 import { convertHyphenToCamel } from "../utils/vnode";
 
@@ -12,7 +12,7 @@ export class SetPropertyMenues implements ISelectMenu {
         this.title = '设置自定义属性';
         this.tag = 'select';
         this.iconSvg = '<svg></svg>';
-        this.selectPanelWidth = 100;
+        this.selectPanelWidth = 130;
         this.alwaysEnable = false;
     }
     getOptions(editor: IDomEditor) {

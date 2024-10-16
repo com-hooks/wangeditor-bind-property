@@ -13,18 +13,38 @@ export const DEFAULT_MENU_LIST = [
         selected: false,
     },
     {
-        value: 'flex-start',
+        value: 'flex-1',
+        text: 'flex1',
+        selected: false,
+    },
+    {
+        value: 'justify-start',
         text: '居左',
         selected: false,
     },
     {
-        value: 'flex-end',
+        value: 'justify-end',
         text: '居右',
         selected: false,
     },
     {
         value: 'center',
         text: '居中',
+        selected: false,
+    },
+    {
+        value: 'align-start',
+        text: '纵轴居上',
+        selected: false,
+    },
+    {
+        value: 'align-center',
+        text: '纵轴居中',
+        selected: false,
+    },
+    {
+        value: 'align-end',
+        text: '纵轴居下',
         selected: false,
     },
     {

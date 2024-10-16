@@ -1,0 +1,55 @@
+.wangedit-css {
+    .custom-class-flex {
+        display: flex;
+    }
+
+    .custom-class-flex-1 {
+        flex: 1;
+    }
+
+    .custom-class-flex-start {
+        justify-content: flex-start;
+    }
+
+    .custom-class-justify-end {
+        justify-content: flex-end;
+    }
+
+    .custom-class-center {
+        justify-content: center;
+    }
+
+    .custom-class-align-start {
+        align-items: flex-start;
+    }
+
+    .custom-class-align-center {
+        align-items: center;
+    }
+
+    .custom-class-align-end {
+        align-items: flex-end;
+    }
+
+    .custom-class-justify-between {
+        justify-content: space-between;
+    }
+
+    .custom-class-justify-around {
+        justify-content: space-around;
+    }
+
+    .custom-class-column {
+        flex-direction: column;
+    }
+
+    .custom-class-row {
+        flex-direction: row;
+    }
+
+    .custom-class-border,
+    [data-border="true"] {
+        border: 1px solid #eee;
+        border-collapse: collapse;
+    }
+}

@@ -8,11 +8,13 @@ export function styleToHtml(node: Descendant, elemHtml: string) {
     const { metadata } = node as PropertyElement
     if (!metadata) return elemHtml
     // 设置样式
-    const $elem = document.createElement('div');
-    $elem.innerHTML = elemHtml;
+    const $elem = new DOMParser().parseFromString(elemHtml, 'text/html').body.children?.[0] as HTMLAnchorElement;
+    if (!$elem) return elemHtml;
     setPropertys($elem.dataset, metadata.dataset || {});
     const props = (metadata.props || {});
-    $elem.className = (props.className ?? []).filter(Boolean).join(' ');
+    if(props.className?.length) {
+        $elem.classList.add(...props.className);
+    }
     // 输出 html
     return $elem.outerHTML;
 }

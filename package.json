@@ -1,26 +1,49 @@
 {
   "name": "wangeditor-bind-property",
   "version": "0.1.0",
-  "description": "",
+  "description": "wangeditor 富文本、添加自定义class  dataset",
   "main": "dist/index.mjs",
   "types": "dist/types/index.d.ts",
   "scripts": {
     "lib": "rspack-lib",
-    "build": "rspack build"
+    "build": "rspack build",
+    "styles": "sass --no-source-map styles/layout.scss dist/styles/layout.css"
   },
   "exports": {
-    "main": "dist/index.mjs",
-    "module": "./dist/index.mjs",
-    "types": "./dist/types/index.d.ts",
-    "require": "/dist/index.cjs"
+    ".": {
+      "main": "./dist/index.mjs",
+      "module": "./dist/index.mjs",
+      "types": "./dist/types/index.d.ts",
+      "require": "./dist/index.cjs"
+    },
+    "./**": {
+      "types": "./*",
+      "require": "./*",
+      "module": "./*"
+    }
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "wangeditor",
+    "rich-text",
+    "custom-class",
+    "dataset",
+    "富文本",
+    "自定义class"
+  ],
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "author": "mmj<840719708@qq.com>",
   "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@wangeditor/editor": "^5.1.23",
     "rspack-dts-plugin": "^0.2.1",
     "rspack-lib": "^0.2.0",
+    "sass": "^1.79.5",
     "slate": "^0.103.0",
     "snabbdom": "^3.6.2",
     "typescript": "^5.6.3"
