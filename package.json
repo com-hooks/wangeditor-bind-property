@@ -1,6 +1,6 @@
 {
   "name": "wangeditor-bind-property",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "wangeditor 富文本、添加自定义class  dataset",
   "main": "dist/index.mjs",
   "types": "dist/types/index.d.ts",
@@ -47,5 +47,8 @@
     "slate": "^0.103.0",
     "snabbdom": "^3.6.2",
     "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
   }
 }

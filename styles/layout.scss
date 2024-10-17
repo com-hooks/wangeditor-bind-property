@@ -48,7 +48,7 @@
     }
 
     .custom-class-border,
-    [data-border="true"] {
+    *[data-border="true"] {
         border: 1px solid #eee;
         border-collapse: collapse;
     }

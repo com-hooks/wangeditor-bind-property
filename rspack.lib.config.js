@@ -34,6 +34,7 @@ module.exports = defineConfig({
             '@wangeditor/editor': '@wangeditor/editor',
             slate: 'slate',
             snabbdom: 'snabbdom',
+            jquery: 'jquery',
         },
         module: {
             rules: [
