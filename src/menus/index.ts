@@ -81,7 +81,7 @@ const menus = [{
     config: {
         list: DEFAULT_MENU_LIST,
     }
-}]
+},]
 export {
     menus,
 }
